@@ -1,0 +1,180 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    color: #fff;
+    background: #8eb9f9;
+    box-sizing: border-box;
+}
+
+.nav {
+    background: #8eb9f9;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    padding: 20px;
+
+    
+}
+
+button {
+    background: #f7bbf3;
+    border: 1px solid #8eb9f9;
+    font-size: 24px;
+    border-radius: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    box-shadow: 0px 2px 40px 0px rgba(0,0,0,.3);
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, #8eb9f9, #acb9fd, #c7bafd, #e1baf9, #f7bbf3);
+    display: flex;
+    justify-content: space-around;
+    font-size: 36px;
+    border-radius: 10% 30% 50% 70%;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+
+
+.flex_text {
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: absolute;
+    animation: mymove 8s linear infinite;
+    background-color: #F7BBF3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@keyframes mymove {
+    from {
+      left: 0;
+    }
+    to {
+      left: -140px;
+    }
+  }
+
+.testimonials {
+    margin-top: 100px;
+    padding: 200px;
+    background-image: linear-gradient(to top, #8eb9f9, #acb9fd, #c7bafd, #e1baf9, #f7bbf3);
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    gap: 30px;
+}  
+
+.testimonials img {
+    --f: .1; /* the parallax factor (the smaller the better) */
+    --r: 10px; /* radius */
+    
+    --_f: calc(100%*var(--f)/(1 + var(--f)));
+    --_a: calc(90deg*var(--f));
+    width: 250px; /* the image size */
+    aspect-ratio: calc(1 + var(--f));
+    object-fit: cover;
+    clip-path: inset(0 var(--_f) 0 0 round var(--r));
+    transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+    transition: .5s;
+    cursor: pointer;
+  }
+  img:hover {
+    clip-path: inset(0 0 0 var(--_f) round var(--r));
+    --_t:translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+  }
+
+  .party {
+    background-color: #DEB1FB;
+    padding: 100px;
+    text-align: center;
+
+  }
+
+  .partyimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    width: 640px;
+    height: 640px;
+    background: url("./gift-cover.jpg") no-repeat;
+  }
+
+  .partyimg:hover{
+    background: url("https://media.tenor.com/wh2Owixfr4sAAAAd/it-a-surprise-liz-lemon.gif") no-repeat;
+    cursor: pointer;
+
+  }
+
+  .partyimg2 {
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    width: 640px;
+    height: 640px;
+    background: url("./gift-cover.jpg") no-repeat;
+  }
+
+  .partyimg2:hover{
+    background: url("https://media.tenor.com/nT541VLVInEAAAAd/genius-lady-decade.gif") no-repeat;
+    cursor: pointer;
+
+  }
+ 
+  .marquee_text {
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: absolute;
+    animation: urmove 8s linear infinite;
+    background-color: #8eb9f9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@keyframes urmove {
+    from {
+      right: 0;
+    }
+    to {
+      right: -140px;
+    }
+  }
+
+.footer {
+    background-image: linear-gradient(to top, #8eb9f9, #a1b8fd, #b6b6ff, #cab4fe, #deb1fb); 
+    text-align: center;
+    font-size: 36px;
+    
+
+}
+
+.footer img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+
+
