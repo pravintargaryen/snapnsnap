@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6df7ba1858.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="https://snapnsnap.github.io/pngegg.png">
+    <title>Photops - Snap N Snap</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="./index.html"><img height="60px" src="https://snapnsnap.github.io/Snapnsnap-removebg-preview.png" alt="hero"/></li>
+            <li><a href="./photops.html"><button id="photops">Photops</button></a></li>
+            <li><a href="#footer"><button id="contact">Contact</button></a></li>
+        </ul>
+    </nav>
+<div class="container">
+    <div class="hero">
+        <h1>Photo for every celebration</h1>
+        <img src="./iphone6.png" alt="phone" class="phone">
+    </div>
+  
+    <div class="gallery">
+        <div class="vertical"><img id="galler-image" src="./gallery/premium_photo-1670588958708-9a9f58a3a30f.avif"></div>
+        <div class="horizontal"><img id="galler-image" src="./gallery/photo-1543738096-79099a610293.avif"></div>
+        <div class="horizontal"><img id="galler-image" src="./gallery/photo-1465495976277-4387d4b0b4c6.avif"></div>
+        <div class="horizontal"><img id="galler-image" src="./gallery/photo-1509619159938-4efea8aa33c3.avif"></div>
+        <div class="vertical"><img id="galler-image" src="./gallery/photo-1510793965583-3cc7f8cca399.avif"></div>
+        <div class="horizontal"><img id="galler-image" src="./gallery/photo-1565275706395-d452122d6cfc.jpg"></div>
+        <div class="vertical"><img id="galler-image" src="./gallery/photo-1569597291935-39d007fceb90.avif"></div>
+        <div class="horizontal"><img id="galler-image" src="./gallery/photo-1576845304705-e95150fec467.jpg"></div>
+        <div class="vertical"><img id="galler-image" src="./gallery/photo-1591570982318-ffe2925b5658.avif"></div>
+        <div class="horizontal"><img id="galler-image" src="./gallery/photo-1596831950763-6c52ec39a81e.avif"></div>
+        <div class="vertical"><img id="galler-image" src="./gallery/photo-1597638533602-d20720b2b9cd.avif"></div>
+        <div class="vertical"><img id="galler-image" src="./gallery/photo-1608790672275-309c02d888ff.avif"></div>
+        <div class="horizontal"><img id="galler-image" src="./gallery/photo-1632767301377-d369dd39cfd1.avif"></div>
+        <div class="vertical"><img id="galler-image" src="./gallery/photo-1536652355537-ab3a523d3d3b.jpg"></div>
+    </div>
+
+    <div class="party">
+		<p>Show your enthusiasm by clicking the celebrate button</p>
+		<audio id="myAudio">
+      <source src="Kevin_MacLeod_-_Beach_Party.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+        <button id="celebrate" onclick="playAudio()" >Celebrate</button>
+		<script>
+    var x = document.getElementById("myAudio");
+
+    function playAudio() {
+      x.play();
+    }
+
+    function pauseAudio() {
+      x.pause();
+    }
+    </script>
+    </div>
+    <div class="footer" id="footer">
+            <img src="https://snapnsnap.github.io/302481805_188348960390436_2695764644924334301_n.jpg" alt="alagappan"/>
+            <p>Alagappan</p>
+            <p>CEO, Founder</p>
+            <button>Drone</button><button>Hall</button><button>Decor</button><button>Food & Hospitality</button>
+            <p><i class="fa-solid fa-phone"></i>+919095058525</p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,80C384,75,480,85,576,101.3C672,117,768,139,864,128C960,117,1056,75,1152,74.7C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+        </div>
+    </div>
+</div>
+
+<script type="module" src="./index.js"></script>
+</body>
+</html>

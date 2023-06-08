@@ -3,12 +3,20 @@ body {
     margin: 0;
     color: #fff;
     background: #8eb9f9;
-    box-sizing: border-box;
+    box-sizing: content-box;
+	width: 100%;
+
+}
+
+.container {
+	box-sizing: content-box;
+	
 }
 
 .nav {
     background: #8eb9f9;
-    margin: 0;
+    display: flex;
+    justify-content: right;
 }
 
 ul {
@@ -48,28 +56,58 @@ button:hover {
     border-radius: 10% 30% 50% 70%;
     padding-left: 70px;
     padding-right: 70px;
+    object-fit: cover;
 }
 
+.phone {
+    transform: rotate(15deg);
+}
 
+.flex_image {
+  box-sizing: content-box;
+}
+
+.marquee{
+  box-sizing: content-box;
+}
 
 .flex_text {
     text-transform: uppercase;
-    white-space: nowrap;
     position: absolute;
-    animation: mymove 8s linear infinite;
     background-color: #F7BBF3;
     padding-top: 10px;
     padding-bottom: 10px;
+	box-sizing: content-box;
+    
 }
 
-@keyframes mymove {
-    from {
-      left: 0;
-    }
-    to {
-      left: -140px;
-    }
-  }
+.gallery {
+  margin-top: 100px;
+  box-sizing: content-box;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, 200px);
+  grid-auto-rows: repeat(7, 200px);
+  grid-auto-flow: dense;
+  justify-content: space-evenly;
+  cursor: pointer;
+  object-fit: cover;
+
+}
+
+.horizontal {
+  grid-column: span 2;
+    grid-row: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+#galler-image {
+  border: 10px solid white;
+  border-radius: 5px;
+}  
 
 .testimonials {
     margin-top: 100px;
@@ -146,20 +184,13 @@ button:hover {
     text-transform: uppercase;
     white-space: nowrap;
     position: absolute;
-    animation: urmove 8s linear infinite;
     background-color: #8eb9f9;
     padding-top: 10px;
     padding-bottom: 10px;
+	box-sizing: content-box;
 }
 
-@keyframes urmove {
-    from {
-      right: 0;
-    }
-    to {
-      right: -140px;
-    }
-  }
+
 
 .footer {
     background-image: linear-gradient(to top, #8eb9f9, #a1b8fd, #b6b6ff, #cab4fe, #deb1fb); 
@@ -176,5 +207,6 @@ button:hover {
     margin-right: auto;
     padding-top: 100px;
 }
+
 
 

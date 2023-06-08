@@ -1,4 +1,4 @@
-'use strict';
+
 
 window.onload = function() {
   // Globals
@@ -212,3 +212,4 @@ window.onload = function() {
 
   poof();
 };
+
